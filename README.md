@@ -1,2 +1,2 @@
-# cross-account-resource-sharing
-Share resources across IBM Cloud accounts
+# Sharing resources across IBM Cloud accounts
+
