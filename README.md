@@ -17,3 +17,4 @@ This kind of sharing can be done independently of having an IBM Cloud Enterprise
 ### Sample Terraform configurations
 - [Configure multi-account access using aliases](terraform-multiaccount)
 - [Service to service authorization for Cloud Object Storage to Key Protect](terraform-authorization-policy.tf)
+- [Route Activity Tracker events from local to central corporate AT instance](activitytracker-to-activitytracker.tf)
