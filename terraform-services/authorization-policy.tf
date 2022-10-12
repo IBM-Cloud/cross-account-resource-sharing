@@ -1,13 +1,13 @@
 # See https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_authorization_policy
 # IBM Cloud IAM service to service authorization policy
 #
-# An Cloud Object Storage located in the source service account is granted Reader permission on
-# the Key Protect instance with a named keyring in the target account.
+# An Cloud Object Storage located in the project account is granted Reader permission on
+# the Key Protect instance with a named keyring in the corporate account.
 # Note that resource_attributes is used to describe all properties of the targeted service.
 #
-# The code is executed on the target account where the permission is granted.
+# The code is executed on the corporate account where the permission is granted.
 resource "ibm_iam_authorization_policy" "cos_to_kms_policy" {
-  provider = ibm.target_account
+  provider = ibm.corporate_account
 
 
   source_service_account      = data.ibm_iam_account_settings.source_iam_account_settings.account_id

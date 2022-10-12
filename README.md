@@ -12,9 +12,10 @@ The diagram shows the following scenarios:
 
 This kind of sharing can be done independently of having an IBM Cloud Enterprise account or not.
 
-![sharing security services](images/resource-sharing-architecture-security.svg)
+![Share security services](images/resource-sharing-architecture-security.svg)
 
 ### Sample Terraform configurations
-- [Configure multi-account access using aliases](terraform-multiaccount)
-- [Service to service authorization for Cloud Object Storage to Key Protect](terraform-authorization-policy.tf)
-- [Route Activity Tracker events from local to central corporate AT instance](activitytracker-to-activitytracker.tf)
+- **Multi-account access**: [Configure multi-account access using aliases](terraform-multiaccount)
+- **Service to service authorization across accounts**: [Service to service authorization for Cloud Object Storage to Key Protect](/terraform-services/authorization-policy.tf)
+- **Activity Tracker event routing**: [Route Activity Tracker events from local to central corporate AT instance](/terraform-services/activitytracker-to-activitytracker.tf)
+- **Security and Compliance Center**: [Configure Security and Compliance Center to scan other IBM Cloud accounts](/terraform-services/security-and-compliance-center.tf)
